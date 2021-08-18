@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+    <link rel="stylesheet" href="/css/caculator.css">
+    <script language="javascript" src="/js/caculator.js"></script>
+</head>
+
+<body>
+    <h1>Máy tính cơ bản</h1>
+    <div class="calculator">
+        <input id="result" placeholder="Hiển thị kết quả"> <br>
+
+        <input type="button" value="1" onclick="click_num(this.value)" />
+        <input type="button" value="2" onclick="click_num(this.value)" />
+        <input type="button" value="3" onclick="click_num(this.value)" />
+        <input type="button" value="+" onclick="click_num(this.value)" />
+        <input type="button" value="-" onclick="click_num(this.value)" /><br>
+        <input type="button" value="4" onclick="click_num(this.value)" />
+        <input type="button" value="5" onclick="click_num(this.value)" />
+        <input type="button" value="6" onclick="click_num(this.value)" />
+        <input type="button" value="*" onclick="click_num(this.value)" />
+        <input type="button" value="/" onclick="click_num(this.value)" /><br>
+        <input type="button" value="7" onclick="click_num(this.value)" />
+        <input type="button" value="8" onclick="click_num(this.value)" />
+        <input type="button" value="9" onclick="click_num(this.value)" />
+        <input type="button" value="=" onclick="result_ca()" />
+        <input type="button" value="AC" onclick="delete_ac()" /><br>
+        <input type="button" value="0" onclick="click_num(this.value)" />
+        <input type="button" value="." onclick="click_num(this.value)" />
+        <input type="button" value="%" onclick="click_num(this.value)" />
+    </div>
+
+</body>
+
+</html>
