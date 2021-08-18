@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/chagemoney.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script language="javascript" src="/js/changemoney.js"></script>
+    <title> Đổi tiền tệ</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Chuyển đổi tiền tệ:</h1>
+        <form action="" class="form_change" name="change_money">
+            <div class="row">
+                <label> Nhập số tiền:</label>
+                <input type="number" id="input_money" placeholder="0">
+            </div>
+            <div class="row">
+                <label> Từ:</label>
+                <select id="input_type">
+                        <option value="vnd">vnd</option>
+                        <option value="usd">usd</option>
+                        <option value="jpy">jpy</option>            
+                </select>
+            </div>
+            <div class="row">
+                <label> Sang:</label>
+                <select id="output_type">
+                    <option value="vnd">vnd</option>
+                    <option value="usd">usd</option>
+                    <option value="jpy">jpy</option>            
+                  </select>
+            </div>
+            <div class="row">
+                <input type="button" class="btn btn-success" value="Chuyển đổi" onclick="changeMoney()">
+            </div>
+            <div class="row">
+                <label> Sau khi đổi sang <b id="loaitien"></b> là: <b id="output_money"></b></label>
+
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
