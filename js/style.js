@@ -85,6 +85,18 @@ function trapezoid() {
     //     ((daylon + daybe) * Math.sqrt(2 * (Math.pow(canhphai, 2) * Math.pow(canhtrai, 2) +
     //         Math.pow(canhphai, 2) * Math.pow(daylon - daybe, 2) + Math.pow(canhtrai, 2) * Math.pow(daylon - daybe, 2) - (Math.pow(canhphai, 4) + Math.pow(canhtrai, 4) +
     //             (Math.pow(daylon - daybe), 4))))) / (4 * (daylon - daybe));
+    if (canhphai == canhtrai) {
+        document.getElementById("typetrapezoid").innerHTML = "hình thang cân";
+    }
+    if (chieucao == canhtrai || chieucao == canhphai) {
+        document.getElementById("typetrapezoid").innerHTML = "hình thang vuông";
+    }
+    if (chieucao > canhphai && chieucao > canhtrai) {
+        document.getElementById("typetrapezoid").innerHTML = "không phải hình thang, vui lòng nhập lại";
+    }
+    if (daylon < daybe) {
+        document.getElementById("typetrapezoid").innerHTML = "hình thang vuôngcui lòng nhập lại độ dài cho các đáy";
+    }
     document.getElementById("cv_trapezoid").innerHTML = CV;
     document.getElementById("s_trapezoid").innerHTML = S;
 }
