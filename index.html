@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tính diện tích hình học</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/font-icon/fontawesome-free-5.15.4-web/">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script language="javascript" src="/js/style.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="change_content">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                    <a class="navbar-brand" href="#">Tính diện tích hình học</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#circel">Tròn</a></li>
+                        <li><a href="#square">Vuông</a></li>
+                        <li><a href="#triangle">Tam giác</a></li>
+                        <li><a href="#trapezoid">Thang</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div data-target="#change_content" class="">
+        <div id="circel" class="col-md-12 farm">
+            <h2> Tính CV,S hình <b>Tròn</b></h2>
+            <form action="" name="circel_js">
+                <input type="number" id="r_cicel" placeholder="Nhập bán kính hình tròn:" />
+                <input type="button" value="Kiểm tra kết quả" onclick="circel()">
+                <p>CV = <span id="cv_circel"></span></p>
+                <p>S = <span id="s_circel"></span></p>
+            </form>
+        </div>
+        <div id="square" class="col-md-12 farm">
+            <h2> Tính CV,S hình <b>Vuông</b></h2>
+            <form action="" name="square_js">
+                <input type="number" id="canh_square" placeholder="Nhập chiều dài cạnh:" />
+                <input type="button" value="Kiểm tra kết quả" onclick="square()">
+                <p>CV = <span id="cv_square"></span></p>
+                <p>S = <span id="s_square"></span></p>
+            </form>
+        </div>
+        <div id="triangle" class="col-md-12 farm">
+            <h2> Tính CV,S hình <b>Tam giác</b></h2>
+            <form action="" class="triangle" name="triangle_js">
+                <input type="number" id="canh1_triangle" placeholder="Nhập chiều dài cạnh thứ nhất:" />
+                <input type="number" id="canh2_triangle" placeholder="Nhập chiều dài cạnh thứ hai:" />
+                <input type="number" id="canh3_triangle" placeholder="Nhập chiều dài cạnh thứ ba:" />
+                <input type="button" value="Kiểm tra kết quả" onclick="triangle()">
+                <p id="typetriangle"></p>
+                <p>CV = <span id="cv_triangle"></span></p>
+                <p>S = <span id="s_triangle"></span></p>
+            </form>
+        </div>
+        <div id="trapezoid" class="col-md-12 farm">
+            <h2> Tính CV,S hình <b>Thang</b></h2>
+            <form action="" class="trapezoid" name="trapezoid_js">
+                <input type="number" id="canhtrai_trapezoid" placeholder="Nhập chiều dài cạnh bên 1:" />
+                <input type="number" id="canhphai_trapezoid" placeholder="Nhập chiều dài cạnh bên 2:" />
+                <input type="number" id="daylon_trapezoid" placeholder="Nhập chiều dài đáy lơn:" />
+                <input type="number" id="daybe_trapezoid" placeholder="Nhập chiều dài đáy bé:" />
+                <input type="number" id="chieucao_trapezoid" placeholder="Nhập chiều cao:" />
+                <input type="button" value="Kiểm tra kết quả" onclick="trapezoid()">
+                <p id="typetrapezoid"></p>
+                <p>CV = <span id="cv_trapezoid"></span></p>
+                <p>S = <span id="s_trapezoid"></span></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

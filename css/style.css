@@ -1,0 +1,24 @@
+.farm {
+    height: 700px;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.triangle,
+.trapezoid {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.triangle input,
+.trapezoid input {
+    height: 50px;
+    width: 220px;
+}
