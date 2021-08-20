@@ -5,30 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/game.css">
     <title>Đua xe</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        canvas {
-            border: 1px solid #d3d3d3;
-            background-color: #f1f1f1;
-        }
-        
-        button {
-            background-color: chartreuse;
-            text-align: center;
-        }
-    </style>
+    <script language="JavaScript" src="/js/jquery-3.6.0.js"></script>
+    <script language="JavaScript" src="/js/game.js "></script>
+
+
+
 </head>
 
-<body onload="startGame()">
-    <button value="start" onclick="clinkstart()">Start</button>
+<body>
+    <div class="container">
+        <div class="start"> <b>S <br> T <br>A <br>R <br>T</b></div>
+        <div class="car">
+            <div class="itemcar" id="item1">
+                <b style="color:dodgerblue; font-size:25px"></b>
+                <b class="kqcar1" id="kqcar1">Lane I</b>
+                <img id="car1" class="imgcar" src="/img/car1.png" alt="">
+            </div>
+            <div class="itemcar" id="item1">
+                <b id="kqcar2">Lane II</b>
+                <img id="car2" class="imgcar" src="/img/car2.png" alt="">
+            </div>
+            <div class="itemcar" id="item1">
+                <b id="kqcar3">Lane III</b>
+                <img id="car3" class="imgcar" src="/img/car3.jpeg" alt="">
+            </div>
+        </div>
+        <div class="end"><b> E<br> n<br> d</b> </div>
+    </div>
+    <div class="btn">
+        <button id="btnstart">Run </button>
+        <button id="btnclear">Replay </button>
+    </div>
+    <!-- <canvas id="canvas1"></canvas> -->
+    <!-- <button value="start " onclick="clinkstart() ">Start</button> -->
+    <!-- <button value="start " onclick="clinkstart() ">Reload</button> -->
 </body>
 
-<script language="JavaScript" src="/js/game.js"></script>
+
 
 </html>
